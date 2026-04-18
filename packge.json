@@ -1,0 +1,9 @@
+{
+    "name" : "agenda-api",
+    "type" : "module",
+    "dependencies" :{
+        "express" : "^4.18.2",
+        "@supabase/supabase-js" : "^2.0.0",
+        "cors" : "^2.8.5"
+    }
+}
