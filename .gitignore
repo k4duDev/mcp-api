@@ -1,0 +1,75 @@
+# =========================
+# NODE MODULES
+# =========================
+node_modules/
+.wwebjs_cache
+# =========================
+# LOGS
+# =========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# ENV (SEGREDOS)
+# =========================
+.env
+.env.local
+.env.development
+.env.production
+
+# =========================
+# SISTEMA OPERACIONAL
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# EDITORES
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# WHATSAPP SESSION (IMPORTANTE)
+# =========================
+.session/
+tokens/
+wwebjs_auth/
+wwebjs_cache/
+
+# =========================
+# ARQUIVOS TEMPORÁRIOS
+# =========================
+tmp/
+temp/
+
+# =========================
+# BUILD / DIST
+# =========================
+dist/
+build/
+
+# =========================
+# TESTES
+# =========================
+coverage/
+
+# =========================
+# DOCKER (se usar)
+# =========================
+docker-data/
+
+# =========================
+# CACHE
+# =========================
+.cache/
+
+# =========================
+# ARQUIVOS LOCAIS
+# =========================
+*.sqlite
+*.db
+*bot.js

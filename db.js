@@ -6,10 +6,3 @@ const supabase = createClient(
 );
 
 export default supabase;
-
-/* 
-// const supabase = createClient(
-//     "https://ipuuchygackymxqewwmq.supabase.co",
-//     "sb_publishable_m_aPgRepceu0ZuSB6WWtpg_rNdv_aHY"
-// );
-*/

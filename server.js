@@ -41,6 +41,24 @@ app.get("/agendamentos", async (req, res) => {
     res.json({ data });
 })
 
+/* CANCELAR AGENDAMENTO */
+app.delete("/cancelar", async (req, res) => {
+  const { telefone, data, hora } = req.body;
+
+  const { error } = await supabase
+    .from("agendamentos")
+    .delete()
+    .eq("telefone", telefone)
+    .eq("data", data)
+    .eq("hora", hora);
+
+  if (error) {
+    return res.status(500).json({ erro: error.message });
+  }
+
+  res.json({ sucesso: true });
+});
+
 /* START */
 const PORT = process.env.PORT || 3000;
 
